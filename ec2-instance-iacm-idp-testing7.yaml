@@ -22,7 +22,7 @@ metadata:
     company.com/environment: "null"
     company.com/owner: "null"
     company.com/instance-type: "t2.micro"
-    company.com/force-destroy: "true"
+    company.com/force-destroy: "null"
     company.com/vm-size: "null"
     company.com/replication-type: "null"
 

@@ -1,0 +1,44 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+
+metadata:
+  name: s3-bucket-update-workflow
+
+  description: "AWS S3 provisioned through Harness IDP."
+
+  tags:
+    - AWS
+    - S3
+    - null
+
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    company.com/cost-center: "null"
+
+    # Infrastructure Metadata
+    company.com/workspace-name: "s3-bucket-update-workflow"
+    company.com/cloud-provider: "AWS"
+    company.com/resource-type: "S3"
+    company.com/environment: "null"
+    company.com/owner: "null"
+    company.com/instance-type: "t2.micro"
+    company.com/force-destroy: "true"
+    company.com/vm-size: "null"
+    company.com/replication-type: "null"
+
+    # Catalog Metadata
+    company.com/catalog-file: "s3-bucket-update-workflow.yaml"
+
+  links:
+    - title: Update Infrastructure
+      url: "/create/templates/default/update-infrastructure-template"
+      icon: update
+
+    - title: Delete Infrastructure
+      url: "/create/templates/default/delete-infrastructure-template"
+      icon: delete
+
+spec:
+  type: infrastructure
+  lifecycle: null
+  owner: null

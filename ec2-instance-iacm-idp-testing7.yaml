@@ -1,0 +1,40 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+
+metadata:
+  name: ec2-instance-iacm-idp-testing7
+
+  description: "AWS EC2 provisioned through Harness IDP."
+
+  tags:
+    - AWS
+    - EC2
+    - null
+
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    company.com/cost-center: "null"
+
+    # Infrastructure Metadata
+    company.com/workspace-name: "ec2-instance-iacm-idp-testing7"
+    company.com/cloud-provider: "AWS"
+    company.com/resource-type: "EC2"
+    company.com/environment: "null"
+    company.com/owner: "null"
+
+    # Catalog Metadata
+    company.com/catalog-file: "ec2-instance-iacm-idp-testing7.yaml"
+
+  links:
+    - title: Update Infrastructure
+      url: "/create/templates/default/update-infrastructure-template"
+      icon: update
+
+    - title: Delete Infrastructure
+      url: "/create/templates/default/delete-infrastructure-template"
+      icon: delete
+
+spec:
+  type: infrastructure
+  lifecycle: null
+  owner: null

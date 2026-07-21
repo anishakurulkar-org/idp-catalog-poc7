@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+
+metadata:
+  name: s3-instance-iacm-idp-testing7
+
+  description: "AWS S3 provisioned through Harness IDP."
+
+  tags:
+    - AWS
+    - S3
+    - Development
+
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+
+    company.com/cost-center: "CC-1011"
+
+    company.com/catalog-file: "S3-s3-instance-iacm-idp-testing7.yaml"
+    company.com/workspace-name: "s3-instance-iacm-idp-testing7"
+    company.com/cloud-provider: "AWS"
+    company.com/resource-type: "S3"
+    company.com/environment: "Development"
+    company.com/owner: "Anish"
+
+  links:
+    - title: Update Infrastructure
+      url: "/create/templates/default/update-infrastructure-template"
+      icon: update
+
+    - title: Delete Infrastructure
+      url: "/create/templates/default/delete-infrastructure-template"
+      icon: delete
+
+spec:
+  type: infrastructure
+  lifecycle: Development
+  owner: Anish

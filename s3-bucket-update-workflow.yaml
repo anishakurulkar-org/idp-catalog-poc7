@@ -21,7 +21,7 @@ metadata:
     company.com/resource-type: "S3"
     company.com/environment: "null"
     company.com/owner: "null"
-    company.com/instance-type: "t2.micro"
+    company.com/instance-type: "null"
     company.com/force-destroy: "true"
     company.com/vm-size: "null"
     company.com/replication-type: "null"
